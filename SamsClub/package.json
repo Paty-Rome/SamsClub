@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-newAccount": "testcafe chrome ./tests -f 'SamsClub'"
+    "test-newAccount": "testcafe chrome ./tests -f 'SamsClub'",
+    "test-addCart": "testcafe chrome ./tests -f 'Samsclub cart'"
   },
   "author": "almaromero",
   "license": "ISC",

@@ -9,3 +9,9 @@ export const CREDENTIALS = {
         MOBILE: '4491234568'
     }
 }
+
+export const ADDCART = {
+    CART:{
+        ITEM: 'Mermelada Members'
+    }
+}
