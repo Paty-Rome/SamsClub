@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "testcafe chrome ./tests",
     "test-newAccount": "testcafe chrome ./tests -f 'SamsClub'",
     "test-addCart": "testcafe chrome ./tests -f 'Samsclub cart'"
   },

@@ -1,5 +1,5 @@
 import { Selector } from "testcafe";
-import { ADDCART, CREDENTIALS } from "../data/constrants";
+import { ADDCART, CREDENTIALS, CREDENTIALS1 } from "../data/constrants";
 import addcartPage from "../pages/addcartPage";
 import mainPage from "../pages/mainPage";
 import newaccountPage from "../pages/newaccountPage";
@@ -11,8 +11,8 @@ fixture `Samsclub cart`
 test ('Adding item to the cart', async t =>{
     await t
         .click(mainPage.closeWindow)
-        .typeText(newaccountPage.emailInput,CREDENTIALS.USER_INFO.MAIL)
-        .typeText(newaccountPage.psswdInput,CREDENTIALS.USER_INFO.PSSWD)
+        .typeText(newaccountPage.emailInput,CREDENTIALS1.USER_INFO.MAIL)
+        .typeText(newaccountPage.psswdInput,CREDENTIALS1.USER_INFO.PSSWD)
         .click(addcartPage.loginButton)
         .click(addcartPage.searchClick)
         .typeText(addcartPage.searchInput,ADDCART.CART.ITEM)
